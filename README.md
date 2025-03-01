@@ -8,7 +8,6 @@ By default this builds a static site to the `/dist` directory than can be served
 
 ```bash
 npm run build
-serve -s dist #OR
 sudo cp -r ./dist/* /var/www/html
 systemctl restart nginx
 ```
@@ -18,7 +17,6 @@ systemctl restart nginx
 If you want to automatically deploy to Vercel instead on push to main, you can comment in the lines of the `astro.config.mjs` file related to vercel, or overwrite the `astro.config.mjs` file with the `astro.config.vercel.mjs` file.
 
 ## Setting up Ubuntu
-
 - Enter the bios and under Chipset set the system power loss power resume to on
 - Perform the default Ubuntu desktop install from the usb drive
 - Choose to replace Windows Boot entirely with Gnome
@@ -28,4 +26,4 @@ If you want to automatically deploy to Vercel instead on push to main, you can c
 - Login to github and download the `./scripts/setup-ubuntu.sh` script from the repo and chmod it
 - Run the `./scripts/setup-ubuntu.sh` script to install the necessary packages
 - Open the gnome-extensions site in Firefox and download the [disable-gestures ](https://extensions.gnome.org/extension/4049/disable-gestures-2021/) extension
-- Add Firefox to the "Startup Applications" app in Gnome with these cli parameters `/usr/bin/firefox --disable-pinch --kiosk http://localhost:80`
+- Add Firefox to the "Startup Applications" app in Gnome with these cli parameters by copying the `firefox.desktop` file to the `~/.config/autostart` directory.
