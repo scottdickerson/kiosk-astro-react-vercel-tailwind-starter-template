@@ -18,6 +18,7 @@ If you want to automatically deploy to Vercel instead on push to main, you can c
 
 ## Setting up Ubuntu
 
+- Startup in Windows mode and copy the license key down and make a label and put it on the underside of the computer
 - Enter the bios and under Chipset set the system power loss power resume to on
 - Perform the default Ubuntu desktop install from the usb drive
 - Choose to replace Windows Boot entirely with Gnome
