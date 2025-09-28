@@ -15,10 +15,10 @@ rm -f packages.microsoft.gpg
 sudo apt update
 sudo apt install -y code
 
-sudo apt install gnome-shell-extensions
-sudo apt install gnome-tweaks
-sudo apt install gnome-browser-connector
-sudo apt uninstall apt remove update-notifier  # this is because we want to stop update notification popups
+sudo apt install -y gnome-shell-extensions
+sudo apt install -y gnome-tweaks
+sudo apt install -y gnome-browser-connector
+sudo apt remove -y update-notifier  # this is because we want to stop update notification popups
 
 # Install NVM (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
